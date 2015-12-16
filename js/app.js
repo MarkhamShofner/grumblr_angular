@@ -11,8 +11,8 @@
       RouterFunction
     ]);
 
-    function RouterFunction($stateProvider){
-      $stateProvider
+  function RouterFunction($stateProvider) {
+    $stateProvider
       .state("grumbleIndex", {
         url: "/grumbles",
         templateUrl: "js/grumbles/index.html",
@@ -20,9 +20,11 @@
         controllerAs: "GrumbleIndexViewModel"
       })
       .state("grumbleShow", {
-        url:"/grumbles/:id",
-        templateUrl: "js/grumbles/show.html"
+        url: "/grumbles/:id",
+        templateUrl: "js/grumbles/show.html",
+        controller: "GrumbleShowController",
+        controllerAs: "GrumbleShowViewModel"
       });
-    }
+  }
 
 })();
