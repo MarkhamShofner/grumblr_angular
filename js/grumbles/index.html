@@ -1,1 +1,5 @@
-<h2> I'm the Grumblllllles index <h2>
+<h2> I'm the Grumbllllllies index <h2>
+
+  <div data-ng-repeat="grumble in GrumbleIndexViewModel.grumbles">
+    <p><a data-ui-sref="grumbleShow({id: $index})">{{grumble.title}}</a></p>
+  </div>

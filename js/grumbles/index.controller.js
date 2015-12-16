@@ -9,5 +9,9 @@
 
   function GrumbleIndexControllerFunction(){
     console.log("I'm in the controller!");
+    this.grumbles = grumbles;
   }
+
+
+
 })();
